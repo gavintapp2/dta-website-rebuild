@@ -1,0 +1,18 @@
+uuid: fcdb3ba5-b54b-419d-b8a1-7fd54c1c79aa
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.platforms_and_services
+id: node.platforms_and_services.title
+field_name: title
+entity_type: node
+bundle: platforms_and_services
+label: 'Project name'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
