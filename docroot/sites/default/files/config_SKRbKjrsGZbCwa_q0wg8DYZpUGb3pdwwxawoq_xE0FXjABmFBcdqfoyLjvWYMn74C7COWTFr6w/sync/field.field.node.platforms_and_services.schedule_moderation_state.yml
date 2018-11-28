@@ -1,0 +1,24 @@
+uuid: 11546e10-3517-4819-82ae-cb7095cea572
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.schedule_moderation_state
+    - node.type.platforms_and_services
+    - scheduled_updates.scheduled_update_type.node_scheduled_moderation_state
+id: node.platforms_and_services.schedule_moderation_state
+field_name: schedule_moderation_state
+entity_type: node
+bundle: platforms_and_services
+label: 'Schedule moderation state'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler_settings:
+    target_bundles:
+      - node_scheduled_moderation_state
+  handler: 'default:scheduled_update'
+field_type: entity_reference

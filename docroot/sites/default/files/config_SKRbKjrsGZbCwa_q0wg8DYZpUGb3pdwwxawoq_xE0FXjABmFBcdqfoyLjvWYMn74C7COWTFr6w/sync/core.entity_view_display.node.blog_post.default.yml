@@ -15,7 +15,6 @@ dependencies:
     - field.field.node.blog_post.field_introduction
     - field.field.node.blog_post.field_linkedin_image
     - field.field.node.blog_post.field_review_date
-    - field.field.node.blog_post.field_schedule
     - field.field.node.blog_post.field_summary
     - field.field.node.blog_post.field_tags
     - field.field.node.blog_post.field_twitter_image
@@ -122,15 +121,6 @@ content:
     region: content
   field_review_date:
     weight: 118
-    label: above
-    settings:
-      format_type: medium
-      timezone_override: ''
-    third_party_settings: {  }
-    type: datetime_default
-    region: content
-  field_schedule:
-    weight: 120
     label: above
     settings:
       format_type: medium

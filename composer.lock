@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "bba5bfb585817ce869534fde1cd37b47",
+    "content-hash": "5aa72444ebc98417e7b86544b768f1c8",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -2458,6 +2458,54 @@
             }
         },
         {
+            "name": "drupal/content_moderation_scheduled_updates",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/content_moderation_scheduled_updates",
+                "reference": "8.x-1.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/content_moderation_scheduled_updates-8.x-1.0.zip",
+                "reference": "8.x-1.0",
+                "shasum": "ffdfe1a24670fc63fc4d3ed00e694ed55e45cc82"
+            },
+            "require": {
+                "drupal/core": "*",
+                "drupal/scheduled_updates": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0",
+                    "datestamp": "1527478087",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "dpi",
+                    "homepage": "https://www.drupal.org/user/81431"
+                }
+            ],
+            "description": "Integrates Scheduled Updates module with Content Moderation",
+            "homepage": "https://www.drupal.org/project/content_moderation_scheduled_updates",
+            "support": {
+                "source": "http://cgit.drupalcode.org/content_moderation_scheduled_updates"
+            }
+        },
+        {
             "name": "drupal/core",
             "version": "8.6.3",
             "source": {
@@ -4225,6 +4273,72 @@
             "homepage": "https://drupal.org/project/imce",
             "support": {
                 "source": "http://cgit.drupalcode.org/imce"
+            }
+        },
+        {
+            "name": "drupal/inline_entity_form",
+            "version": "1.0.0-rc1",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/inline_entity_form",
+                "reference": "8.x-1.0-rc1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/inline_entity_form-8.x-1.0-rc1.zip",
+                "reference": "8.x-1.0-rc1",
+                "shasum": "898789fb6a0662fc2572b87f8d0654a0241473f9"
+            },
+            "require": {
+                "drupal/core": "~8.0"
+            },
+            "require-dev": {
+                "drupal/entity_reference_revisions": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0-rc1",
+                    "datestamp": "1527030784",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "RC releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "bojanz",
+                    "homepage": "https://www.drupal.org/user/86106"
+                },
+                {
+                    "name": "dawehner",
+                    "homepage": "https://www.drupal.org/user/99340"
+                },
+                {
+                    "name": "rszrama",
+                    "homepage": "https://www.drupal.org/user/49344"
+                },
+                {
+                    "name": "slashrsm",
+                    "homepage": "https://www.drupal.org/user/744628"
+                },
+                {
+                    "name": "webflo",
+                    "homepage": "https://www.drupal.org/user/254778"
+                }
+            ],
+            "description": "Provides a widget for inline management (creation, modification, removal) of referenced entities.",
+            "homepage": "https://www.drupal.org/project/inline_entity_form",
+            "support": {
+                "source": "http://cgit.drupalcode.org/inline_entity_form"
             }
         },
         {
@@ -6164,6 +6278,52 @@
             }
         },
         {
+            "name": "drupal/scheduled_updates",
+            "version": "dev-1.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/scheduled_updates",
+                "reference": "9d8e074bbc239da48b7a42903f530f01c6e04152"
+            },
+            "require": {
+                "drupal/core": "*",
+                "drupal/inline_entity_form": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0-alpha6+2-dev",
+                    "datestamp": "1524483484",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                },
+                "patches_applied": {
+                    "Scheduled Updates does not work with Content Moderation": "https://www.drupal.org/files/issues/2018-07-31/scheduled_updates_with_content_moderation-2821916-28.patch"
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "tedbow",
+                    "homepage": "https://www.drupal.org/user/240860"
+                }
+            ],
+            "description": "Create scheduled updates to field values on entities such content, users, and terms.",
+            "homepage": "https://www.drupal.org/project/scheduled_updates",
+            "support": {
+                "source": "http://cgit.drupalcode.org/scheduled_updates"
+            },
+            "time": "2018-04-23T11:34:02+00:00"
+        },
+        {
             "name": "drupal/search_api",
             "version": "1.10.0",
             "source": {
@@ -7945,16 +8105,16 @@
         },
         {
             "name": "govau/dta-gov-au",
-            "version": "1.8.1",
+            "version": "1.8.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/govau/dta-gov-au.git",
-                "reference": "1bd4ff6d9a9e8eed02a8bbac6b132c15ffc868b7"
+                "reference": "d696e843b99b08d9d0f8bf0a6c9bc3c8454e825b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/govau/dta-gov-au/zipball/1bd4ff6d9a9e8eed02a8bbac6b132c15ffc868b7",
-                "reference": "1bd4ff6d9a9e8eed02a8bbac6b132c15ffc868b7",
+                "url": "https://api.github.com/repos/govau/dta-gov-au/zipball/d696e843b99b08d9d0f8bf0a6c9bc3c8454e825b",
+                "reference": "d696e843b99b08d9d0f8bf0a6c9bc3c8454e825b",
                 "shasum": ""
             },
             "require": {
@@ -7972,7 +8132,7 @@
                 "government",
                 "theme"
             ],
-            "time": "2018-11-21T02:42:58+00:00"
+            "time": "2018-11-23T04:31:50+00:00"
         },
         {
             "name": "govau/dta-uikit-base",
@@ -14389,7 +14549,8 @@
     "stability-flags": {
         "drupal/empty_fields": 20,
         "drupal/extlink": 20,
-        "drupal/link_css": 20
+        "drupal/link_css": 20,
+        "drupal/scheduled_updates": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,

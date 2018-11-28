@@ -1,0 +1,20 @@
+uuid: 493b927f-bd85-487d-b9d4-7ca09826ac5f
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - scheduled_updates
+id: node.schedule_moderation_state
+field_name: schedule_moderation_state
+entity_type: node
+type: entity_reference
+settings:
+  target_type: scheduled_update
+module: core
+locked: false
+cardinality: -1
+translatable: false
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

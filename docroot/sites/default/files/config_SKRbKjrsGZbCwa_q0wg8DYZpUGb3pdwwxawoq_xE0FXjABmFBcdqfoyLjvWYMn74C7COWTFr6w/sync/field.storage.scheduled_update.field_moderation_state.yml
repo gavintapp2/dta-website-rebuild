@@ -1,0 +1,21 @@
+uuid: f02d9dd4-333d-4ddc-812a-852c0a8f90f8
+langcode: en
+status: true
+dependencies:
+  module:
+    - scheduled_updates
+id: scheduled_update.field_moderation_state
+field_name: field_moderation_state
+entity_type: scheduled_update
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,17 @@
+uuid: df8e3046-495f-4d92-a08c-4f9b699d088c
+langcode: en
+status: true
+dependencies: {  }
+id: node_scheduled_moderation_state
+label: 'Node scheduled moderation state'
+update_entity_type: node
+update_types_supported:
+  - embedded
+field_map:
+  field_moderation_state: moderation_state
+update_runner:
+  id: latest_revision
+  after_run: DELETE
+  invalid_update_behavior: REQUEUE
+  create_revisions: BUNDLE_DEFAULT
+  update_user: USER_REVISION_OWNER

@@ -1,0 +1,33 @@
+uuid: 24303d62-4102-4f53-bb7a-b846690337b3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.scheduled_update.node_scheduled_moderation_state.field_moderation_state
+    - scheduled_updates.scheduled_update_type.node_scheduled_moderation_state
+  module:
+    - content_moderation_scheduled_updates
+    - field_layout
+    - layout_discovery
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
+id: scheduled_update.node_scheduled_moderation_state.default
+targetEntityType: scheduled_update
+bundle: node_scheduled_moderation_state
+mode: default
+content:
+  field_moderation_state:
+    type: cmsu_moderation_state
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  update_timestamp:
+    type: datetime_timestamp
+    weight: -9
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

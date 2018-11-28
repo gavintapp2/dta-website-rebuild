@@ -9,6 +9,7 @@ dependencies:
     - field.field.node.platforms_and_services.field_introduction
     - field.field.node.platforms_and_services.field_review_date
     - field.field.node.platforms_and_services.field_summary
+    - field.field.node.platforms_and_services.schedule_moderation_state
     - image.style.thumbnail
     - node.type.platforms_and_services
   module:
@@ -17,6 +18,7 @@ dependencies:
     - field_layout
     - image
     - imce
+    - inline_entity_form
     - layout_discovery
     - path
     - text
@@ -103,6 +105,22 @@ content:
     weight: 3
     region: content
     third_party_settings: {  }
+  schedule_moderation_state:
+    type: inline_entity_form_complex
+    weight: 11
+    settings:
+      override_labels: true
+      label_singular: 'Schedule moderation state'
+      label_plural: 'Schedule moderation states'
+      allow_new: true
+      match_operator: CONTAINS
+      allow_existing: false
+      form_mode: default
+      collapsible: false
+      collapsed: false
+      allow_duplicate: false
+    third_party_settings: {  }
+    region: content
   status:
     type: boolean_checkbox
     settings:
